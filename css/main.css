@@ -146,19 +146,15 @@ header {
     padding-inline : 15rem;
     padding-block: 10rem;
     width: 100%;
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: (8, 1fr);
-    grid-template-areas: 
-        "galeria__titulo    galeria__titulo     galeria__titulo"
-        "galeria__parrafo   galeria__parrafo    galeria__parrafo"
-        "img1               img2                img3"
-        ""
-        ""
-        ""
-        ""
-        ""
-    ;
+}
+
+.texto__galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+.galeria {
+    padding-top: 12rem;
 }
 
 .galeria__titulo{
@@ -167,8 +163,9 @@ header {
 }
 
 .galeria__subtitulo{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     font-weight: 100;
+    padding-block: 2rem;
 }
 
 .galeria__parrafo {
@@ -176,6 +173,33 @@ header {
     margin-bottom: 2rem
 }
 
+.galeria__imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "img1   img2    img3";
+    grid-gap: 4rem;
+    padding-top: 3rem;
+}
+
+.img1{
+    grid-area: img1;
+    width: 100%;
+
+}
+
+.img2{
+    grid-area: img2;
+    width: 100%;
+
+}
+
+.img3{
+    grid-area: img3;
+    width: 100%;
+
+}
 
 /* footer */
 
