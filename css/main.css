@@ -500,3 +500,268 @@ footer {
 /*fin contacto*/
 
 }
+
+@media screen and (max-width: 850px) {
+
+    
+    header {
+        display: inline;
+        padding-inline: 1rem;
+    }
+
+    .navbar {
+        margin-top: 1rem;
+    }
+
+    .simbolo {
+        width: 4%;
+    }
+
+    h1 {
+        font-size: .8rem;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    .menu {
+        justify-content: center;
+        font-size: 0.7rem;
+        max-width: 100%;
+        gap: 0.8rem;
+    }
+
+    .home {
+        display: none;
+    }
+
+    /*cards*/
+    
+    .card {
+        background-color: #0D1A3F;
+        color: white;
+        padding-inline : 3rem;
+        padding-block: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .quiensoy {
+        padding-top: 15rem;
+        gap: 3rem;
+    }
+    
+    
+    .grafico {
+        background-color: white;
+        color: #0D1A3F;
+        gap: 3rem;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .ux {
+        padding-top: 10rem;
+        gap: 3rem;
+    }
+    
+    .card__imagen {
+        max-width: 100%
+    }
+    
+    
+    .card__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 1rem
+    }
+    
+    .card__parrafo {
+        font-size: 1rem;
+        margin-bottom: 2rem
+    }
+    
+    .card__boton {
+        background-color: #D11225;
+        border: 0;
+        padding-inline: 5rem;
+        padding-block: 1rem;
+        border-radius: 2rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-block: 1rem;
+        max-width: 100%;
+    }
+    
+    .card__soy-david {
+        background-color: #0D1A3F;
+        color: white;
+        padding-inline : 3rem;
+        padding-block: 5rem;
+        width: 100%;
+    }
+    
+    .soy {
+        padding-top: 10rem;
+    }
+    
+    .card__experiencia {
+        background-color: white;
+        color: #0D1A3F;
+        padding-inline : 3rem;
+        padding-block: 5rem;
+        width: 100%;
+    }
+    
+    /* galeria */
+    
+    .galeria {
+        background-color: #0D1A3F;
+        color: white;
+        padding-inline : 3rem;
+        padding-block: 5rem;
+        width: 100%;
+    }
+    
+    .texto__galeria {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .galeria {
+        padding-top: 12rem;
+    }
+    
+    .galeria__titulo{
+        font-size: 2.5rem;
+        margin-bottom: 2rem
+    }
+    
+    .galeria__subtitulo{
+        font-size: 1rem;
+        font-weight: 100;
+        padding-block: 2rem;
+    }
+    
+    .galeria__parrafo {
+        font-size: 1rem;
+        margin-bottom: 2rem
+    }
+    
+    .galeria__imagenes {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: 
+            "img1"
+            "img2"
+            "img3"
+            ;
+        grid-gap: 2rem;
+        padding-top: 3rem;
+    }
+    
+    .img1{
+        grid-area: img1;
+        width: 100%;
+    
+    }
+    
+    .img2{
+        grid-area: img2;
+        width: 100%;
+    }
+    
+    .img3{
+        grid-area: img3;
+        width: 100%;
+    }
+    
+    /* fin galeria */
+    
+    /*contacto*/
+    
+    .formulario {
+        background-color: #0D1A3F;
+        color: white;
+        padding-inline : 3rem;
+        padding-block: 5rem;
+        width: 100%;
+    }
+    
+    .formulario__titulo {
+        font-size: 2.5rem;
+        margin-bottom: 2rem;
+        margin-top: 8rem;
+    }
+    
+    .formulario__parrafo {
+        font-size: 1rem;
+    }
+    
+    .contenedor {
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 4rem;
+    }
+    
+    .contenedor__informacion {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    
+    .input {
+        width: 100%;
+        background-color: #0a1533;
+        display: flex;
+        flex-direction: row;
+        border-radius: .5rem;
+        padding: 1rem;
+        border: 0;
+        color: white;
+        font-size: .6rem;
+    }
+    
+    .boton__form {
+        background-color: #D11225;
+        border: 0;
+        padding-inline: 3rem;
+        padding-block: 1rem;
+        border-radius: 2rem;
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+        max-width: 100%;
+    }
+    
+    
+    /*fin contacto*/
+
+    /* footer */
+
+.icono__footer {
+    color: white;
+    font-size: 1rem;
+    margin-right: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    color: white;
+    background-color: #0a1533;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: .5rem;
+}
+    
+    }
