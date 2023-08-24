@@ -7,9 +7,15 @@
     font-family: 'Poppins', sans-serif;
 }
 
+
+
 h1 {
     color: white;
     font-size: 1.1rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .logo {
