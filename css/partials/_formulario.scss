@@ -1,0 +1,58 @@
+
+.formulario {
+    background-color: $maincolor;
+    color: white;
+    padding-inline : 10rem;
+    padding-block: 12rem;
+    width: 100%;
+
+    .formulario__titulo {
+        font-size: 5rem;
+        margin-top: 4rem;
+        margin-bottom: 2rem
+    }
+    
+    .formulario__parrafo {
+        font-size: 1rem;
+    }
+
+    .contenedor {
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+
+        .boton__form {
+        @extend %boton;
+        width: 100%;
+        }
+
+        .contenedor__informacion {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            .input {
+                width: 100%;
+                background-color: $accentcolor;
+                display: flex;
+                flex-direction: row;
+                border-radius: .5rem;
+                padding: .8rem;
+                border: 0;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

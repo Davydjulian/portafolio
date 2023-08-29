@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+$fontpoppins: 'poppins', sans-serif;
+
+$maincolor: #0D1A3F;
+$secondarycolor: #D11225;
+$accentcolor: #0a1533;
+
+%iconos {
+    color: white;
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+
+%boton {
+    background-color: $secondarycolor;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: .3s;
+}
+
+@keyframes imagenes {
+    from {
+        scale: 50%;
+    }
+    to {
+        scale: 100%;
+    }
+}

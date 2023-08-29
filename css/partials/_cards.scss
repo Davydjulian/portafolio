@@ -1,0 +1,77 @@
+.card {
+
+    background-color: $maincolor;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-inline: 10rem;
+    padding-block:10rem;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+
+    @include tablet {
+        background-color: aqua;
+    }
+    
+    .card__imagen {
+        max-width: 100%;
+        transition: 1s;
+        animation: imagenes .5s;
+    }
+
+    .card__titulo {
+        font-size: 5rem;
+    }
+
+    .card__parrafo {
+        font-size: 1rem;
+        margin-block: 1rem;
+        margin-bottom: 3rem
+    }
+
+    .card__boton {
+        @extend %boton;
+    }
+
+}
+
+.cardgrafico {
+    background-color: white;
+    color: $maincolor;
+}
+
+.cardquien {
+    padding-top: 16rem;
+}
+
+.card__sobremi {
+    background-color: $maincolor;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 10rem;
+    padding-block:10rem;
+    max-width: 100%;
+    align-items: start;
+    gap: 5rem;
+    justify-content: center;
+
+    .card__titulo {
+        font-size: 5rem;
+    }
+
+    .card__parrafo {
+        font-size: 1rem;
+    }
+}
+
+.cardexperiencia {
+    background-color: white;
+    color: $maincolor;
+}
+
+.cardhola {
+    padding-top: 16rem;
+}

@@ -1,0 +1,12 @@
+.icono__footer {
+    @extend %iconos
+}
+
+footer {
+    padding: 3rem;
+    color: white;
+    background-color: $accentcolor;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

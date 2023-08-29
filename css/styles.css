@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+.icono__footer {
+  color: white;
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+
+.formulario .contenedor .boton__form, .card .card__boton {
+  background-color: #D11225;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 1rem 5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+@keyframes imagenes {
+  from {
+    scale: 50%;
+  }
+  to {
+    scale: 100%;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+* a {
+  text-decoration: none;
+}
+
+header {
+  background-color: #0a1533;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 3rem;
+  padding-inline: 5rem;
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  transition: 0.2s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 20px -20px;
+}
+header .logo {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+header .logo h1 {
+  color: white;
+  font-size: 1.1rem;
+}
+header .menu {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+header .menu .active {
+  font-weight: 700;
+}
+header .menu .menu__item a {
+  color: white;
+  text-decoration: none;
+  transition: 0.3s;
+}
+header .menu .menu__item a:hover {
+  font-weight: 700;
+  color: #D11225;
+}
+
+.card {
+  background-color: #0D1A3F;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  padding-inline: 10rem;
+  padding-block: 10rem;
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+}
+.card .card__imagen {
+  max-width: 100%;
+  transition: 1s;
+  animation: imagenes 0.5s;
+}
+.card .card__titulo {
+  font-size: 5rem;
+}
+.card .card__parrafo {
+  font-size: 1rem;
+  margin-block: 1rem;
+  margin-bottom: 3rem;
+}
+.cardgrafico {
+  background-color: white;
+  color: #0D1A3F;
+}
+
+.cardquien {
+  padding-top: 16rem;
+}
+
+.card__sobremi {
+  background-color: #0D1A3F;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding-inline: 10rem;
+  padding-block: 10rem;
+  max-width: 100%;
+  align-items: start;
+  gap: 5rem;
+  justify-content: center;
+}
+.card__sobremi .card__titulo {
+  font-size: 5rem;
+}
+.card__sobremi .card__parrafo {
+  font-size: 1rem;
+}
+
+.cardexperiencia {
+  background-color: white;
+  color: #0D1A3F;
+}
+
+.cardhola {
+  padding-top: 16rem;
+}
+
+.galeria {
+  background-color: #0D1A3F;
+  color: white;
+  padding-inline: 10rem;
+  padding-block: 5rem;
+  width: 100%;
+  padding-top: 16rem;
+  justify-content: center;
+  max-width: 100%;
+}
+.galeria .galeria__texto {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+.galeria .galeria__texto .galeria__titulo {
+  font-size: 5rem;
+}
+.galeria .galeria__texto .galeria__parrafo {
+  font-size: 1rem;
+}
+
+.galeria__subtitulo {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-block: 1rem;
+}
+
+.galeria__imagenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "img1   img2    img3";
+  grid-gap: 2rem;
+  padding-bottom: 4rem;
+  transition: 1s;
+  animation: imagenes 0.5s;
+}
+.galeria__imagenes .img1 {
+  grid-area: img1;
+  width: 100%;
+}
+.galeria__imagenes .img2 {
+  grid-area: img2;
+  width: 100%;
+}
+.galeria__imagenes .img3 {
+  grid-area: img3;
+  width: 100%;
+}
+.galeria__imagenes .galeria__imagenes {
+  transition: 0.3s;
+}
+.galeria__imagenes .galeria_imagen {
+  transition: 0.3s;
+}
+.galeria__imagenes .galeria_imagen:hover {
+  transform: scale(105%) translateY(1rem);
+}
+
+.formulario {
+  background-color: #0D1A3F;
+  color: white;
+  padding-inline: 10rem;
+  padding-block: 12rem;
+  width: 100%;
+}
+.formulario .formulario__titulo {
+  font-size: 5rem;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+.formulario .formulario__parrafo {
+  font-size: 1rem;
+}
+.formulario .contenedor {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+}
+.formulario .contenedor .boton__form {
+  width: 100%;
+}
+.formulario .contenedor .contenedor__informacion {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.formulario .contenedor .contenedor__informacion .input {
+  width: 100%;
+  background-color: #0a1533;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  padding: 0.8rem;
+  border: 0;
+  color: white;
+}
+
+footer {
+  padding: 3rem;
+  color: white;
+  background-color: #0a1533;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */
