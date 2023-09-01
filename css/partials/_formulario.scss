@@ -6,10 +6,20 @@
     padding-block: 12rem;
     width: 100%;
 
+    @include mobile {
+        padding-inline: 2rem;
+        padding-block: 8rem;
+    }
+
     .formulario__titulo {
         font-size: 5rem;
         margin-top: 4rem;
-        margin-bottom: 2rem
+        margin-bottom: 2rem;
+
+        @include mobile {
+            font-size: 3rem;
+            margin-top: 6rem;
+        }
     }
     
     .formulario__parrafo {

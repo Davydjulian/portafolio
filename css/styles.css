@@ -117,6 +117,46 @@ header .menu .menu__item a:hover {
     left: 0;
   }
 }
+@media screen and (max-width: 600px) {
+  header {
+    padding-block: 3rem;
+    padding-inline: 2.8rem;
+  }
+  header .menu__mobile {
+    display: flex;
+    align-items: center;
+  }
+  header .menu__mobile .nav-toggle {
+    display: block;
+  }
+  header .menu__mobile .logo {
+    display: block;
+  }
+  header .menu__mobile .logo .simbolo {
+    max-width: 80%;
+  }
+  header .navbar .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #0D1A3F;
+    position: fixed;
+    top: 9rem;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    padding-block: 4rem;
+    height: calc(100% - 9rem);
+    overflow-y: auto;
+    left: 100%;
+    transition: 0.3s;
+  }
+  header .navbar .menu .menu__item {
+    padding-block: 1rem;
+  }
+  header .navbar .menu_visible {
+    left: 0;
+  }
+}
 .card {
   background-color: #0D1A3F;
   color: white;
@@ -138,9 +178,10 @@ header .menu .menu__item a:hover {
 }
 @media screen and (max-width: 600px) {
   .card {
-    padding-inline: 3.5rem;
+    padding-inline: 2.5rem;
     justify-content: center;
     align-items: center;
+    padding-block: 8rem;
   }
 }
 .card .card__imagen {
@@ -150,6 +191,11 @@ header .menu .menu__item a:hover {
 }
 .card .card__titulo {
   font-size: 5rem;
+}
+@media screen and (max-width: 600px) {
+  .card .card__titulo {
+    font-size: 3rem;
+  }
 }
 .card .card__parrafo {
   font-size: 1rem;
@@ -169,6 +215,11 @@ header .menu .menu__item a:hover {
 .cardquien {
   padding-top: 16rem;
 }
+@media screen and (max-width: 600px) {
+  .cardquien {
+    padding-top: 14rem;
+  }
+}
 
 .card__sobremi {
   background-color: #0D1A3F;
@@ -182,8 +233,30 @@ header .menu .menu__item a:hover {
   gap: 5rem;
   justify-content: center;
 }
+@media screen and (max-width: 1200px) {
+  .card__sobremi {
+    flex-direction: column;
+    align-items: start;
+    padding-inline: 5rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .card__sobremi {
+    padding-inline: 2.5rem;
+    justify-content: center;
+    align-items: start;
+    padding-block: 8rem;
+    gap: 3rem;
+    padding-block: 6rem;
+  }
+}
 .card__sobremi .card__titulo {
   font-size: 5rem;
+}
+@media screen and (max-width: 600px) {
+  .card__sobremi .card__titulo {
+    font-size: 3rem;
+  }
 }
 .card__sobremi .card__parrafo {
   font-size: 1rem;
@@ -197,6 +270,11 @@ header .menu .menu__item a:hover {
 .cardhola {
   padding-top: 16rem;
 }
+@media screen and (max-width: 600px) {
+  .cardhola {
+    padding-top: 14rem;
+  }
+}
 
 .galeria {
   background-color: #0D1A3F;
@@ -208,13 +286,30 @@ header .menu .menu__item a:hover {
   justify-content: center;
   max-width: 100%;
 }
+@media screen and (max-width: 600px) {
+  .galeria {
+    padding-inline: 2rem;
+    padding-top: 12rem;
+  }
+}
 .galeria .galeria__texto {
   display: flex;
   flex-direction: column;
   margin-bottom: 5rem;
 }
+@media screen and (max-width: 600px) {
+  .galeria .galeria__texto {
+    margin-bottom: 3rem;
+  }
+}
 .galeria .galeria__texto .galeria__titulo {
   font-size: 5rem;
+}
+@media screen and (max-width: 600px) {
+  .galeria .galeria__texto .galeria__titulo {
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
 }
 .galeria .galeria__texto .galeria__parrafo {
   font-size: 1rem;
@@ -235,6 +330,14 @@ header .menu .menu__item a:hover {
   padding-bottom: 4rem;
   transition: 1s;
   animation: imagenes 0.5s;
+}
+@media screen and (max-width: 600px) {
+  .galeria__imagenes {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "img1" "img2" "img3";
+    padding-bottom: 2rem;
+  }
 }
 .galeria__imagenes .img1 {
   grid-area: img1;
@@ -265,10 +368,22 @@ header .menu .menu__item a:hover {
   padding-block: 12rem;
   width: 100%;
 }
+@media screen and (max-width: 600px) {
+  .formulario {
+    padding-inline: 2rem;
+    padding-block: 8rem;
+  }
+}
 .formulario .formulario__titulo {
   font-size: 5rem;
   margin-top: 4rem;
   margin-bottom: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .formulario .formulario__titulo {
+    font-size: 3rem;
+    margin-top: 6rem;
+  }
 }
 .formulario .formulario__parrafo {
   font-size: 1rem;
@@ -299,6 +414,12 @@ header .menu .menu__item a:hover {
   color: white;
 }
 
+@media screen and (max-width: 600px) {
+  .icono__footer {
+    font-size: 1.5rem;
+  }
+}
+
 footer {
   padding: 3rem;
   color: white;
@@ -306,4 +427,10 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    padding: 2rem;
+    font-size: 0.6rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

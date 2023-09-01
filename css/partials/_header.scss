@@ -106,3 +106,62 @@ header {
     }
 
 }
+
+@include mobile {
+
+    header {
+
+        padding-block: 3rem;
+        padding-inline: 2.8rem;
+
+        .menu__mobile {
+
+            display: flex;
+            align-items: center;
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .logo {
+                display: block;
+                .simbolo {
+                    max-width: 80%;
+                }
+            }
+
+        }
+
+        .navbar {
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                background-color: #0D1A3F;
+                position: fixed;
+                top: 9rem;
+                width: 100%;
+                gap: 2rem;
+                align-items: center;
+                padding-block: 4rem;
+
+
+                height: calc(100% - 9rem);
+                overflow-y: auto;
+
+                left: 100%;
+                transition: .3s;
+
+                .menu__item {
+                    padding-block: 1rem;
+                }
+            }
+
+            .menu_visible {
+                left: 0;
+            }
+        }
+
+    }
+
+}

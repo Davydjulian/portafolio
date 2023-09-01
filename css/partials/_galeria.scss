@@ -1,22 +1,36 @@
 .galeria {
     background-color: $maincolor;
     color: white;
-    padding-inline : 10rem;
+    padding-inline: 10rem;
     padding-block: 5rem;
     width: 100%;
     padding-top: 16rem;
     justify-content: center;
     max-width: 100%;
 
+    @include mobile {
+        padding-inline: 2rem;
+        padding-top: 12rem;
+    }
+
     .galeria__texto {
         display: flex;
         flex-direction: column;
         margin-bottom: 5rem;
 
-        .galeria__titulo{
-            font-size: 5rem;
+        @include mobile {
+            margin-bottom: 3rem;
         }
-        
+
+        .galeria__titulo {
+            font-size: 5rem;
+
+            @include mobile {
+                font-size: 3rem;
+                padding-bottom: 1rem;
+            }
+        }
+
         .galeria__parrafo {
             font-size: 1rem;
         }
@@ -24,51 +38,59 @@
 }
 
 
-.galeria__subtitulo{
+.galeria__subtitulo {
     font-size: 1rem;
     font-weight: 600;
     padding-block: 1rem;
 }
+
+.galeria__imagenes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "img1   img2    img3";
+    grid-gap: 2rem;
+    padding-bottom: 4rem;
+    transition: 1s;
+    animation: imagenes .5s;
+
+    @include mobile {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas:
+            "img1"
+            "img2"
+            "img3";
+
+        padding-bottom: 2rem;
+    }
+
+    .img1 {
+        grid-area: img1;
+        width: 100%;
+    }
+
+    .img2 {
+        grid-area: img2;
+        width: 100%;
+    }
+
+    .img3 {
+        grid-area: img3;
+        width: 100%;
+    }
+
     .galeria__imagenes {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-            "img1   img2    img3";
-        grid-gap: 2rem;
-        padding-bottom: 4rem;
-        transition: 1s;
-        animation: imagenes .5s;
+        transition: .3s;
+    }
 
-        .img1{
-            grid-area: img1;
-            width: 100%;
-        }
-        .img2{
-            grid-area: img2;
-            width: 100%;
-        }
-        .img3{
-            grid-area: img3;
-            width: 100%;
-        }
-        .galeria__imagenes {
-            transition: .3s;
-        }
-        .galeria_imagen {
-            transition: .3s;
+    .galeria_imagen {
+        transition: .3s;
 
-            &:hover{
-                transform: scale(105%) translateY(1rem)
-            }
+        &:hover {
+            transform: scale(105%) translateY(1rem)
         }
-        
+    }
+
 }
-
-
-
-
-
-
-
-

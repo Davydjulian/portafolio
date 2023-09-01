@@ -1,5 +1,8 @@
 .icono__footer {
-    @extend %iconos
+    @extend %iconos;
+    @include mobile {
+        font-size: 1.5rem;
+    }
 }
 
 footer {
@@ -9,4 +12,10 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+
+
+    @include mobile {
+        padding: 2rem;
+        font-size: .6rem;
+    }
 }
