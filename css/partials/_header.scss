@@ -7,10 +7,17 @@ header {
     padding-inline: 5rem;
     position: fixed;
     z-index: 100;
-    width:100%;
+    width: 100%;
     transition: .2s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 20px -20px;
 
+    .toggle {
+        color: white;
+        background: none;
+        border: none;
+        font-size: 2rem;
+        display: none;
+    }
 
     .logo {
         display: flex;
@@ -43,4 +50,19 @@ header {
             }
         }
     }
+}
+
+@include tablet {
+
+.menu {
+    .toggle {
+        display: flex;
+    }
+
+    .menu__item {
+        display: none;
+    }
+}
+
+
 }
