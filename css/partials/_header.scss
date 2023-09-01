@@ -11,7 +11,7 @@ header {
     transition: .2s;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 20px -20px;
 
-    .toggle {
+    .nav-toggle {
         color: white;
         background: none;
         border: none;
@@ -54,15 +54,55 @@ header {
 
 @include tablet {
 
-.menu {
-    .toggle {
-        display: flex;
-    }
+    header {
 
-    .menu__item {
-        display: none;
-    }
-}
+        display: block;
 
+        .menu__mobile {
+
+            justify-content: space-between;
+            display: flex;
+
+            .nav-toggle {
+                display: block;
+            }
+
+            .logo {
+                display: block;
+            }
+
+        }
+
+        .navbar {
+
+            .menu {
+                display: flex;
+                flex-direction: column;
+                background-color: #0D1A3F;
+                position: fixed;
+                top: 9rem;
+                width: 100%;
+                gap: 2rem;
+                align-items: center;
+                padding-block: 4rem;
+
+
+                height: calc(100% - 9rem);
+                overflow-y: auto;
+
+                left: 100%;
+                transition: .3s;
+
+                .menu__item {
+                    padding-block: 1rem;
+                }
+            }
+
+            .menu_visible {
+                left: 0;
+            }
+        }
+
+    }
 
 }

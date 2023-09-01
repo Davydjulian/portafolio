@@ -47,7 +47,7 @@ header {
   transition: 0.2s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 25px 20px -20px;
 }
-header .toggle {
+header .nav-toggle {
   color: white;
   background: none;
   border: none;
@@ -82,11 +82,39 @@ header .menu .menu__item a:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  .menu .toggle {
+  header {
+    display: block;
+  }
+  header .menu__mobile {
+    justify-content: space-between;
     display: flex;
   }
-  .menu .menu__item {
-    display: none;
+  header .menu__mobile .nav-toggle {
+    display: block;
+  }
+  header .menu__mobile .logo {
+    display: block;
+  }
+  header .navbar .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #0D1A3F;
+    position: fixed;
+    top: 9rem;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    padding-block: 4rem;
+    height: calc(100% - 9rem);
+    overflow-y: auto;
+    left: 100%;
+    transition: 0.3s;
+  }
+  header .navbar .menu .menu__item {
+    padding-block: 1rem;
+  }
+  header .navbar .menu_visible {
+    left: 0;
   }
 }
 .card {
